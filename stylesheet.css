@@ -65,7 +65,7 @@ body {
 .flowers {
     font-size: 30px;
     text-align: center;
-    font-size: clamp(2rem, 2.56rem + 2.42vw, 4.375rem);
+    font-size: clamp(1.875rem, 1.02rem + 3.64vw, 3.75rem);
 }
 
 /* The second page */
