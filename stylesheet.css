@@ -95,11 +95,15 @@ body {
 
     font-family: 'Patrick hand', 'Shantell Sans', cursive;
     font-size: 50px;
+    font-size: clamp(1.75rem, 1.13rem + 2.67vw, 3.125rem);
     letter-spacing: 0.5px;
 
     text-indent: 30px;
 
-    padding: 2em;
+
+    padding: 20px;
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+    line-height: 1.6;
     overflow-wrap: break-word;
 }
 
