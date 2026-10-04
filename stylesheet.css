@@ -60,13 +60,14 @@ body {
     border: 2px solid blue;
     padding: 60px;
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
 .flowers {
     font-size: 70px;
     text-align: center;
-    font-size: clamp(3.125rem, 2.56rem + 2.42vw, 4.375rem);
+    font-size: clamp(2rem, 2.56rem + 2.42vw, 4.375rem);
 }
 
 /* The second page */
