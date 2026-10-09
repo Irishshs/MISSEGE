@@ -17,6 +17,49 @@ body {
     background-size: cover;
 }
 
+/* Login Pageee*/
+#login-overlay {
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(235, 132, 149);
+    z-index: 9999;
+
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s ease;
+}
+
+.login-content {
+    text-align: center;
+    font-family: sans-serif;
+    transition: opacity 0.4s ease; /* For fading out text first */
+}
+
+.login-content input, .login-content button {
+    padding: 10px 16px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-content button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
 /* The first page */
 .first {
     border: 2px solid black;
@@ -93,8 +136,9 @@ body {
 
     font-family: 'Patrick hand', 'Shantell Sans', cursive;
     font-size: 30px;
-    font-size: clamp(0.625rem, 0.35rem + 1.39vw, 1.875rem);
+    font-size: clamp(1rem, 1.02rem + 1.39vw, 1.875rem);
     letter-spacing: 0.5px;
+    flex-wrap: wrap;
 
     text-indent: 30px;
 
@@ -164,3 +208,12 @@ body {
 @keyframes bounce {
     50% {transform: translateY(75%);}
 }
+
+#login-overlay.fade-content .login-content {
+    opacity: 0;
+}
+
+#login-overlay.rolled-up {
+    transform: translateY(-100%);
+}
+
