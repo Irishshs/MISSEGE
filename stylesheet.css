@@ -17,6 +17,7 @@ body {
     background-size: cover;
 }
 
+
 /* Login Pageee*/
 #login-overlay {
     height: 100vh;
@@ -58,11 +59,8 @@ body {
 }
 
 
-
-
 /* The first page */
 .first {
-    border: 2px solid black;
     width: 100%;
     min-height: 100dvh;
 }
@@ -217,3 +215,25 @@ body {
     transform: translateY(-100%);
 }
 
+@keyframes fall {
+    0% {
+    top: -40px;
+    opacity: 0.9;
+    }
+    100% {
+        top: 105vh; /* Drop slightly past the bottom of the screen */
+        opacity: 0.2;
+    }
+}
+
+@keyframes sway {
+    0% {
+    transform: translateX(0px) rotate(0deg);
+    }
+    50% {
+    transform: translateX(25px) rotate(180deg);
+    }
+    100% {
+    transform: translateX(-25px) rotate(360deg);
+    }
+}

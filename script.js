@@ -2,6 +2,7 @@ const loginForm = document.getElementById('login-form');
 const loginOverlay = document.getElementById('login-overlay');
 const usernameInput = document.getElementById('username'); // Grab the input field
 
+
 loginForm.addEventListener('submit', function(e) {
   e.preventDefault(); // Prevents page reload
 
